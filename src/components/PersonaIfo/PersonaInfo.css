@@ -1,0 +1,53 @@
+
+.ProfilText {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid;
+    border-radius: 44px;
+}
+
+.ProfilText div h5{
+    display: flex;
+    align-items: flex-start;
+    /* margin-left: 40px; */
+    flex-direction: column;
+    
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.img img{
+    width: 230px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 148px;
+    z-index: -1;
+}
+.ImgFlex{
+    display: flex;
+}
+.ImgFlex button {
+    margin-left: 20px;
+    border-radius: 26px;
+    width: 34px;
+ 
+  }
+  
+  .ImgFlex button img{
+    width: 19px;
+    margin-bottom: 3px;
+  }
+
+  .ButtonLeft{
+    display: flex;
+    margin-top: 20px;
+  }
+  .InfoBlogCardFlex{
+    display: flex;
+  }

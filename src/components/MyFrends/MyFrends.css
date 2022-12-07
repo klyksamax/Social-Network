@@ -1,0 +1,32 @@
+.container1 {
+  display: grid;
+ 
+  }
+
+
+  .box-1 {
+    display: flex;
+    padding: 20px;
+  }
+
+  .box-20{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
+  .box-2 {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .box-3 {
+   
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+ 
+    height: 428;
+  }

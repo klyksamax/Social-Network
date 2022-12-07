@@ -1,0 +1,33 @@
+.BlogCard {
+  display: grid;
+  margin: 20px;
+  border-radius: 36px;
+  border-style: inset;
+  border-color: rgb(36, 35, 35);
+  align-items: center;
+  justify-content: start;
+}
+
+.BlogCard h2 {
+  display: grid;
+  margin-left: 30px;
+  margin-top: 6px;
+}
+
+.BlogCard h5 {
+  display: grid;
+  margin-left: 30px;
+}
+.GridH{
+  display: flex;
+  align-items: center;
+}
+.GridH button {
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.GridH button img{
+  width: 20px;
+  margin-bottom: 3px;
+}

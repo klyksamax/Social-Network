@@ -1,0 +1,29 @@
+.GridMyPost{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-content: center;
+}
+.Create{
+    display: grid;
+    justify-content: center;
+}
+.Form {
+    display: grid;
+}
+.Messages{
+    display: flex;
+    
+    flex-direction: column;
+    margin-top: 60px;
+  
+
+}
+
+.Button{
+    margin-top: 7px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+}
