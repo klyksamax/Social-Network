@@ -56,7 +56,7 @@ export const AppNavbar =() => {
 <Container>
   <Navbar.Collapse className="meAuto"  id="responsive-navbar-nav">
     <Nav>
-      <Nav.Link>Привет незнакомец</Nav.Link>
+      <Nav.Link>Hello my friend</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Container> 
