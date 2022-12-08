@@ -131,7 +131,7 @@ const handelerSubmit = (event) => {
             onChange={e => setValue4(e.target.value)}/>
             </div>
             
-            <Button onClick={allSendMes} variant={"outlined"}>Отправить</Button>
+            <Button onClick={allSendMes} variant={"outlined"}>Send</Button>
             </div>
             </Container>
             </>

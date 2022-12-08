@@ -15,13 +15,9 @@ const MyPage = (props) => {
     const {auth, firestore} = useContext(Context)
     const [user] = useAuthState(auth)
     const [currentState, setCurrentState] = useState(0)
-    const dispatch = useDispatch();
+   
 
 
-    const sum = (a,b) =>{
-        return (a+b)
-    }
-    console.log(sum(100000,2))
 
     useEffect(() => {
         

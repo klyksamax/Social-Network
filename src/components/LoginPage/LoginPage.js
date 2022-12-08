@@ -1,10 +1,7 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import "../LoginPage/LoginPage.css"
 import { Link } from 'react-router-dom';
 import { Login } from '../HookPage/Login';
-import React, {useState} from 'react';
-import SplashScreen from '../SplashScreen/SplashScreen';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 
 const LoginPage = (props) =>{
@@ -15,7 +12,7 @@ const LoginPage = (props) =>{
       <div className='Eblema' ><img src='https://decalshouse.co.uk/11181-home_default/naruto-akatsuki-cloud-emblem-vinyl-decal-sticker.jpg'/>
       </div>
       <Container>
-      <div class="ramka-1">
+      <div className="ramka-1">
       <div className='index1'>
       <div className='GridRamka' >
       <div className='GridLoginPage' >

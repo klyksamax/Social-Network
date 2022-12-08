@@ -88,7 +88,7 @@ import { Redirect } from "react-router-dom";
     
     try {
         const docRef = await deleteDoc(add);
-        console.log("Document update with ID: ", docRef);
+        // console.log("Document update with ID: ", docRef);
        
     } catch (e) {
       console.error("Error adding document: ", e);
@@ -103,10 +103,10 @@ import { Redirect } from "react-router-dom";
     if (item[1].uid === user.uid) {
       
         return(
-          <div className="DeleteFlex" >
+          <div className="DeleteFlex" key={item}>
             <div className="ramka-5"><img  src={item[1].photoURL}/>
           </div>         
-          <Button onClick={()=>{deletePost(item[0])}}>Удалить</Button>
+          <Button onClick={()=>{deletePost(item[0])}}>Delete</Button>
           </div>
           
         )}
@@ -120,7 +120,7 @@ import { Redirect } from "react-router-dom";
         <div className="sendCont">
           <input type="file" onChange={handelerSubmit}>                   
           </input>
-          <Button onClick={createPost} variant={"outlined"}>Отправить</Button>
+          <Button onClick={createPost} >Send</Button>
         </div>
         
         <div className="SplashScreen ">

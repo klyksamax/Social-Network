@@ -1,14 +1,8 @@
-import MyPage from '../MyPage'
-import React, {useContext, useState, useEffect, useRef} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import '../PersonaIfo/PersonaInfo.css'
 import {Context} from '../../index'
 import {useAuthState} from "react-firebase-hooks/auth";
-import {collection, addDoc, Timestamp, getDocs, doc, query, onSnapshot, orderBy , updateDoc} from "firebase/firestore";
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import { getStorage, ref, uploadBytes } from "firebase/storage";
-import { debugErrorMap } from 'firebase/auth';
-import PersonaInfoEdit from './PersonaInfoAdd';
+import {collection, query, onSnapshot, orderBy } from "firebase/firestore";
 import { InfoBlogCard } from './InfoBlogCard';
 import PersonaInfoAdd from './PersonaInfoAdd';
 import PersonaInfoEdid from './PersonaInfoEdid';
@@ -76,10 +70,11 @@ const PersonaInfo = (props) => {
   
         const messagesDatas = messagesData.map((item, i)=>{
             if (item[1].uid === user.uid && item[1].PeopleBase!==null) {
+              
                 return(
                     <InfoBlogCard
-                   
-                    key={item[1].uid}
+                   key={item[1].uid}
+                    uid={item[1].uid}
                     imageURL={item[1].PeopleBase.imageURL}
                     nameUser={item[1].PeopleBase.nameUser}
                     surnamUser={item[1].PeopleBase.surnamUser}

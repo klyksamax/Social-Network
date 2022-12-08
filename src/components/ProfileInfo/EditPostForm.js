@@ -89,7 +89,7 @@ const EditPostForm = (props) => {
                                 variant="primary"
                                 size="lg"
                                 active>
-                                Сохранить
+                                Save
                             </Button>{' '}
                         </>
 

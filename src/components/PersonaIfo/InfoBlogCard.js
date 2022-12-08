@@ -3,8 +3,6 @@ import Button from 'react-bootstrap/Button';
 import "./PersonaInfo.css"
 import Container from 'react-bootstrap/Container';
 export const InfoBlogCard = ({
-
-key,
 imageURL,
 nameUser,
 surnamUser,
@@ -15,7 +13,10 @@ handelSelectPost,
 handleEditFormShow,
 handleAddFormShow,
 handleEditFormHide,
-}) =>{
+uid
+}) => {
+
+  
 
   const showEditForm = ()=>{
     handelSelectPost();
@@ -23,14 +24,15 @@ handleEditFormHide,
     handleEditFormHide();
     handleEditFormShow();
   }
+ 
 
     return(
         
-        <Container key={key}>
+        <Container key={uid}>
         <Container  className="img" >  
     <img src={imageURL} />
-    <div className="ButtonLeft">
-    <Button  variant="dark" onClick={showEditForm}>Изменить профиль</Button >
+    <div className="ButtonLeft" >
+    <Button  variant="dark" onClick={showEditForm}>Change profile</Button >
     </div>
         </Container>
 <Container  className="ProfilText" >

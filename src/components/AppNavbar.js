@@ -47,7 +47,7 @@ export const AppNavbar =() => {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link as={Link} to="/login" onClick={()=>dispatch(removeUser())}>Выйти {email}</Nav.Link>
+      <Nav.Link as={Link} to="/login" onClick={()=>dispatch(removeUser())}>Log out of {email}</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Container> 

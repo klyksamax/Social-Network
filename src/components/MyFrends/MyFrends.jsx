@@ -71,7 +71,7 @@ const handleEditFormHide =()=>{
       </ListGroup>
       <Card.Body className='cardBody'>
         <div>
-        <Card.Link href='#`${}`' onClick={()=>{createFriend(item)}}>Отправить сообщение</Card.Link>
+        <Card.Link href='#`${}`' onClick={()=>{createFriend(item)}}>Send a message</Card.Link>
         </div>
         
       </Card.Body>
@@ -80,16 +80,12 @@ const handleEditFormHide =()=>{
         }
     })
 
-
-    
- console.log(editForm)
-
     const contOverlay = () =>{
       return (
         <>
         {itemDat ? 
           <>
-        <Container maxWidth="sm" action='' className='addPostForm'>
+        <Container  action='' className='addPostForm'>
           
           <div className='GridMyPost2' >
         <Dialog

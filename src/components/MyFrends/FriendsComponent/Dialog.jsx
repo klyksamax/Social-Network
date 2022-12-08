@@ -119,7 +119,7 @@ return (
                         value={value}
                         onChange={e => setValue(e.target.value)}
                     />
-                    <Button onClick={sendMessage} variant={"outlined"}>Отправить {props.itemUid}</Button>
+                    <Button onClick={sendMessage} variant={"outlined"}>Send {props.itemUid}</Button>
                 </Grid>
             </Grid>
         </>

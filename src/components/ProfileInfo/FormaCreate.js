@@ -85,7 +85,7 @@ const FormaCreate = (props) => {
                                 variant="primary"
                                 size="lg"
                                 active>
-                                Отправить
+                                Send
                             </Button>{' '}
                         </>
 
